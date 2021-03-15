@@ -1,0 +1,377 @@
+https://blog.eccouncil.org/threat-modeling-methodologies-tools-and-processes/
+https://www.toolbox.com/security/vulnerability-management/articles/top-10-threat-modeling-tools-2020/
+https://www.csoonline.com/article/3537370/threat-modeling-explained-a-process-for-anticipating-cyber-attacks.html
+
+What is Threat Modeling?
+	Threat modeling is the method of prioritizing your network security by identifying high-risk threats or vulnerabilities
+ 	and creating security mitigations that protect sensitive data and intellectual propertyand prevent cyberattacks’ 
+	negative influences against your system.
+
+Why Threat Modeling important?
+	cyberattacks can easily cost your organization millions of dollars in business loss, legal costs, and mitigation—this why
+ 	you need to include several processes and aspects into your threat modeling scheme
+
+	Without including one of these components into your threat modeling process, you’ll have incomplete models,
+	cyber threat intelligence,
+	mitigation capabilities,
+	threat mapping
+	risk assessment
+	asset identification.
+
+How to perform threat modeling?
+------------------------------
+	he following are the steps that will help you build a scalable and repeatable threat modeling process 
+
+	1 Identify, prioritize, and focus on high-risk threats
+	-----------------------------------------------------
+	The first step to an effective threat modeling is identifying the risks potential threats pose to your organization.
+	
+	certified threat intelligence analyst to prioritize and direct mitigation resources on high-risk software components, 
+	vulnerabilities, and threats.
+
+	2 Identify mitigation approach
+	------------------------------
+	The next step is to recognize how to mitigate the threat
+	You can either apply relevant security requirements in the code, thus tackling the issue at its source.
+	Or you can include a security control to mitigate the threat before it gets to the source by using firewalls, WAF, SSO, and so on.
+
+	3 Identify potential adversaries and threats
+	--------------------------------------------
+	A cyber intelligence analyst must be able to identify potential threats and assess unanticipated events to competently implement 
+	the security and establish the validity of the system they develop.
+
+	You need to create an adversary-based threat model that can help you recognize possible threats and malicious attackers trying to
+	 compromise your device.
+	
+	The best practice to understand the mind of a malicious actor is to build abuse cases. 
+
+	4 Reporting and operationalizing
+	-----------------------------------
+	After you have collected all the relevant information necessary to establish your system’s security requirements, you should create a report that accurately captures the leading threats, 
+	either from an enterprise or application perspective.
+	
+	Both the decision-makers and stakeholders should gather to review the effectiveness of threat modeling
+
+Threat Modeling Methodologies
+-----------------------------
+	There are different methodologies available for performing threat modeling
+	The type of threat you’re trying to model and its purpose would determine the right methodology to use. 
+	
+	Some of the popular threat modeling methodologies include:
+	A. STRIDE, (https://blog.eccouncil.org/what-is-stride-methodology-in-threat-modeling/)
+	B. PASTA,  (https://blog.eccouncil.org/what-is-pasta-threat-modeling/)
+	C. TRIKE,  (https://blog.eccouncil.org/trike-threat-modeling-as-a-risk-management-tool/)
+	D. VAST,   (https://www.csoonline.com/article/3537370/threat-modeling-explained-a-process-for-anticipating-cyber-attacks.html)
+	E. DREAD,  (https://blog.eccouncil.org/dread-threat-modeling-an-introduction-to-qualitative-and-quantitative-risk-analysis/)
+	F. OCTAVE, (https://blog.eccouncil.org/octave-threat-modeling-all-you-need-to-know/)
+	G. CVSS
+
+	Others include:
+
+	LINDDUN
+	Security Cards
+	Quantitative TMM
+	Attack trees
+	hTMM
+	T-MAP
+	
+        STRIDE
+	------
+	This is applied as part of the Microsoft Security Development Lifecycle (SDL) with the Threat modeling Tool.
+	STRIDE is an acronym for Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service (DoS), and Elevation of Privilege.
+	
+	Tampering
+T		his involves modifying something on memory, disk, network, or somewhere else, which violates integrity.
+		This is a violation because only authorized users should be able to modify a system or the data on it
+		If the malicious hacker can infiltrate your system and taper with the information present, there can be serious consequences.
+
+	Spoofing-> 
+		Spoofing is the act of disguising a communication from an unknown source as being from a known, trusted source.
+		Spoofing can apply to emails, phone calls, and websites, or can be more technical, such as a computer spoofing an IP address, 
+		Address Resolution Protocol (ARP), or Domain Name System (DNS) server
+
+	Repudiation Attack – A repudiation attack occurs when the user denies the fact that he or she has performed a certain action or has 
+				initiated a transaction. A user can simply deny having knowledge of the transaction or communication and later 
+				claim that such transaction or communication never took place
+	Information Disclosure
+		This involves disclosing information to an authorized user, which violates confidentiality.
+		an attacker can extract user data and machine secrets by exploiting bugs like SQL injection to read DB tables or read error messages
+		When it comes to information disclosure (data stores), the perpetrator can do the following:
+		
+		1 take advantage of missing or inappropriate ACL or bad database permissions
+		2 file files protected by obscurity
+		3 retrieve data from logs/temp files or swap files
+		4 locate crypto keys on disk or in memory
+		5 discover exciting information in filenames or directory names
+		6 get the device, boot in a new OS
+		7 and see data traversing a network
+
+	Denial of Service
+		This involves exhausting resources required to offer services,
+		which violates availability. Systems are typically used for a specific purpose, like a banking application.
+		
+	Elevation of Privilege
+		This involves allowing someone to do what they are unauthorized to do,which violates authorization.
+		An attacker can try to obtain more privileges by spoofing a user with more privileges or tampering with a system to 
+		elevate their privileges.
+
+	Reference: https://blog.eccouncil.org/what-is-stride-methodology-in-threat-modeling/
+
+	
+	PASTA
+	-----
+	This is an attacker-focused methodology built to correlate technical requirements with business objectives. 
+	PASTA stands for Process for Attack Simulation and Threat Analysis.
+
+	1. Define Objectives
+		In the first step of PASTA, the objectives of the threat modeling process are listed down. Clear objectives make
+	        the entire process more streamlined,
+		
+		Objectives are also necessary for determining security and compliance requirements relevant to the process due to 
+		business or government regulations
+
+		The tools and methods to be used for the test are also defined in this step.
+	
+	2. Define Technical Scope
+		The boundaries of the application need to be defined, along with the application dependencies from the network environment.
+		The dependencies on the server infrastructure also need to be discovered and their relevance to the software
+		To accomplish this, high-level design documents are used in this stage which include network diagrams and logical & 
+		  physical architecture diagrams.
+		The software and technical specifications are also used as a source of information at this stage.
+
+	3. Decomposition & Analysis of Application
+		A definition and evaluation of assets needs to be carried out, wherein data in transit and at rest are taken into consideration.
+		A trust boundary, a boundary in which a system trusts all subsystems inclusive of data, should also be created for each computing 
+		  asset. Services, hardware, and software relevant to the application should be decomposed.
+		Data entry points and trust levels are to be determined, resulting in the mapping of use cases with assets and actors.
+	
+	4. Threat Analysis
+		This step is intended to identify and extract threat information from sources of intelligence.
+		Threat analysis enumerates threat attack scenarios that are exploited by web-focused attack agents. 
+		The enumeration process results in the identification of threat agents and attacks the application is susceptible to.
+
+	5. Vulnerabilities & Weaknesses Analysis
+		This stage aims to analyze the weaknesses and vulnerabilities of web application security controls. 
+		This stage correlates vulnerabilities to the application’s assets. 
+		It maps threats to security flaws in the application and enumerates and scores vulnerabilities as per established scoring.
+
+	6. Attack/Exploit Enumeration and Modeling
+		There is the identification of the application’s attack surface.
+		The attack trees for the identified exploits are enumerated and determined.
+		A map of attack vectors to attack trees’ nodes is drawn, and the identification of exploits and attack paths is carried out 
+		  with the attack trees’ aid.
+	
+	7. Analyze Modeling & Simulation
+		After an attack vector has been modeled, the security analysts determine the plausibility of running a successful attack. 
+		Use cases are mapped to abuse cases.
+		Threat modeling is used to link an attack vector and scenario in which it would be exploited.
+
+	8. Risk & Impact Analysis
+		Once the threat model has been successfully created and analyzed, an analysis of the affected areas should be carried out, 
+		 should a successful attack occur.
+		Affected assets, systems, and networks are analyzed to determine the extent of disruption.
+		Gaps in security controls are identified in this step. Based on identified attack vectors, mitigations are developed, and 
+		 residual risk determined.
+	
+
+	TRIKE
+	-----
+		This is a risk-centric approach with exceptional execution and risk-management tool. Its complete version is implemented 
+		to build a risk model based on actions, assets, calculated risk exposure, and roles.
+		
+		With everything moving online, it has become necessary for organizations to stay up to date on the latest cybersecurity 
+		 threats to their organization
+
+		A cybersecurity threat is any malicious activity whose intent is to damage or disrupt digital systems.
+		Common cyber threats include computer viruses, data breaches, and Denial of Service attacks
+		The primary purpose of threat modeling is to provide a systematic analysis of what needs to be included in the policies 
+		 formed to mitigate the threat.
+
+	Why Trike?
+		Trike is a unified methodology for carrying out security threat modeling. This is accomplished through the generation 
+		of threat models from a risk management perspective. 
+		
+		This allows for a more accurate description of the system from the lowest technologies to the highest architecture.
+		
+		Trike is divided into the following stages:
+		1.Requirement Model-> In this stage of the model process, an understanding of the user application is developed.
+				      The security team looks at the people interacting with the system, the things it interacts with, 
+					and the actions it is expected to support.
+				      The actors are the people and members of staff who interact with the system.
+				      The security analysis assets are the data entities or physical objects catered for in the system’s business rules. 
+				      Actions are things done to assets by the business processes
+			These are defined to gain an understanding of the system. This is used to generate an Actor-Asset-Action matrix representing and 
+			analyzing the modeling process’ requirement model.
+		
+		2. Risk Assessment
+		   	Once a full understanding of both the application’s implementation and capabilities are determined, a threat model can be generated.
+			This is used to analyze the various risks to the application’s security. 
+			Once all the potential threats have been identified, the security team begins creating an attack graph and examining the system’s actual vulnerabilities.
+	
+		3. Data Flow Diagram
+			Once the threats have been assessed, there needs to be a reconstruction of how the vulnerabilities would affect the system and its assets. 
+			This can be reconstructed using data flow diagrams. 
+			The data flow diagram entities could consist of processes, data stores, the flow of data, and external interactions with the environment and external entities
+			The top level of the DFD would consist of every actor and processes used by the system.
+			As the DFD expands in the lower levels, trust boundaries need to be defined, with the markup being defined to capture as much necessary information as possible.
+			
+		4. Assigning Risk Values
+			Once a DFD has been created, associated risk values can be calculated based on the threat’s severity. 
+			An analysis of the impact of the vulnerability on the entire system can rank the vulnerabilities. 
+			Using this, the organization’s security team can know what to focus on and what is not urgent. 
+			Once the risk values have been assigned, it becomes possible to generate a conclusive security vulnerability report on the application. 
+			Policies and mitigations can then be implemented to counter the highlighted threats.
+
+		VAST
+			The Visual, Agile, and Simple Threat (VAST) Modeling method is based on ThreatModeler, an automated threat-modeling platform.
+			that distinguishes between application and operational threat models.
+			
+			VAST is designed specifically to integrate into workflows built around the devops philosophy.
+			
+
+			VAST: Application Threat Models
+			Application threat models for development teams are created with process flow diagrams (PFD). Process flow diagrams 
+			map the features and communications of an application in much the same way as developers and architects think about 
+			the application during an SDLC design session.
+
+
+			VAST: Operational Threat Models
+			Operational threat models are designed for the infrastructure teams. Though more similar to traditional DFDs than 
+			application threat models, the data flow information is presented from an attacker – not a data packet – perspective. 
+			By relying on PFDs rather than DFDs, VAST threat models do not require extensive systems expertise.
+
+			Uniquely addressing both developer and infrastructure team concerns allows organizations to incorporate threat modeling 
+			as a part of their DevOps lifecycle with different outputs for various key stakeholders.
+			
+
+		DREAD
+			The DREAD methodology is a quantitative risk analysis that rates, compares, and prioritizes a cyber threat’s severity.
+			
+			Damage potential: How great is the damage if the vulnerability is exploited?
+			Reproducibility: How easy is it to reproduce the attack?
+			Exploitability: How easy is it to launch an attack?
+			Affected users: As a rough percentage, how many users are affected?
+			Discoverability: How easy is it to find the vulnerability?
+
+			Each of these questions is answered with a rating between one and three.
+
+			What Is DREAD Threat Modeling?
+			
+			DREAD cyber threat intelligence modeling creates a rating system for threats by assessing, analyzing, and creating risk 
+			probabilities. DREAD threat modeling allows an organization to ascertain the amount of damage done by an attack and create 
+			damage assessments for similar attacks in the future. Based on data points and information gathered, the organization can then 
+			create a rating system for threats and classify them under low, medium, and high-risk categories.
+
+		DREAD Breakdown
+			Though the word DREAD carries a fearful connotation, yet there’s a valid reason behind the coining of this term in the 
+			cybersecurity space. The key points of DREAD threat modelling are as below:
+
+			“D” for Damage: Understanding the potential damage that a particular threat can cause to an organization’s IT infrastructure.
+			“R” for Reproducibility: In layman’s terms, reproducibility gives an understanding of how easily the threat can be replicated 
+				by other hackers or cyber criminals.
+			“E” for Exploitability: Analyse the system’s vulnerabilities to ascertain the ease of an attack.
+			“A” for Affected Users: Ascertain how many users, the ones within and the ones outside, of a business (clients/customers) will 
+				be affected post-attack.
+			“D” for Discoverability: The process of discovering the vulnerable points in the system infrastructure and the IT network of 
+				an organization.
+
+			The DREAD model helps to rate, compare, and prioritize the severity of threats by analyzing threats/risks in each category, ending with a final rating. Each category is given a rating between 0 to 10 and the average of these ratings determine the severity of risks.
+
+		Damage Potential
+		Rating	Damage
+		0	No damage
+		5	Information disclosure
+		8	Individual/employer non-sensitive user data compromised
+		9	Administrative non-sensitive data compromised
+		10	Information system or data destruction or application unavailability
+
+		Reproducible
+		Rating	How easy is it to reproduce the attack?
+		0	Difficult or Impossible
+		5	Complex
+		7.5	Easy for authenticated user
+		10	Very easy through web browser, no authentication
+
+		Exploitability
+		Rating	What is required to exploit this threat?
+		2.5	Advanced programming and networking skills
+		5	Using available attack tools
+		9	A web application proxy tool
+		10	Web browser
+
+		Affected Users
+		Rating	How many users affected?
+		0	No users affected
+		2.5	Individual user
+		6	Few users
+		8	Administrative users
+		10	All users
+
+		Discoverability
+		Rating	How easy is it to discover the threat?
+		0	Very hard
+		5	Can figure it out by HTTP requests
+		8	Already in the public domain and can easily be discovered
+		10	Visible in the web browser address bar or in a formThe threat rating is calculated taking these five key points, wherein each point is assigned a severity rating of high, medium, and low. The risk rating for the threats and vulnerabilities is as follows:
+
+		Risk Rating	DREAD Score	Comments
+		Critical	40-50	Critical vulnerability, should be considered immediately for review and resolution
+		High	25-39	Severe vulnerability, should be considered for review and resolution within a short period of time
+		Medium	11-24	Moderate risk finding or vulnerabilities should be considered once severe and critical risks have been addressed
+		Low	1-10	Low risk and does not pose significant risk to the IT infrastructure
+
+		Based on the needs you want to cater to, the DREAD methodology can be customized to perform the risk analysis.
+
+
+	OCTAVE
+		The Operationally Critical Threat, Asset, and Vulnerability Evaluation (OCTAVE) model is a risk-based strategic assessment 
+		and planning method for cybersecurity.
+
+		OCTAVE is a threat modeling framework to assess and manage risks in an organization in the event of a data breach.
+		
+		OCTAVE Threat Model Background
+		It’s useful for creating a risk-aware corporate culture and is highly customizable as per the organization’s specific 
+		security objectives and risk environment. 
+
+		OCTAVE-S, a simplified methodology for smaller organizations that have flat hierarchical structures, and
+		OCTAVE Allegro, a more comprehensive version for large organizations or those with multilevel structures.
+
+		Importance of OCTAVE Threat Model
+		OCTAVE is a flexible and self-operated risk assessment method.
+		People from the business units and the IT department work together to address the security needs of the organization. 
+		The team defines the current state of security, identify risks to critical assets, and create a security strategy. 
+		Unlike other risk assessment methodologies, the OCTAVE model is driven by operational risk and security practices — not technology.
+
+		The purpose of the OCTAVE model is to allow organizations to:
+		1 Assess and manage information security risks.
+		2 Take decisions based on the risks.
+		3 Protect key information assets.
+		4 Effectively communicate security information.
+
+		OCTAVE threat modeling is implemented in three phases:
+
+		1 Build an asset-based threat profile
+			In this phase, the team determines what IT assets are important to the organization and how they are safeguarded. Next comes 
+			selecting those assets that are critical and highly important to the organization and establishing security requirements for 
+			each asset. Last is identifying threats to each asset, creating a threat profile based on that.
+
+
+		2 Identify infrastructure vulnerabilities
+			In this phase, the analysis team identify important infrastructure vulnerabilities and develop policies and practices to address 
+			these vulnerabilities. This is done by:
+
+		3 Examining the organization’s information infrastructure configuration, data flows, and network access paths.
+			Performing infrastructure vulnerability assessments by selecting and analyzing intrusion scenarios.
+			Develop security strategies and plans
+			During this phase, the team of analysts identify and prioritize the risks based on how critical the asset is for the organization. 
+			This is achieved by determining vulnerable points in potential intrusion scenarios and examining assets exposed by these 
+			vulnerabilities. Finally, the team creates a protection strategy for the organization and defines mitigation plans to address 
+			the risks to the critical assets, based upon on the analysis of the intelligence gathered.
+
+		
+CVSS
+Common Vulnerability Scoring System (CVSS) is a standardized threat scoring model developed by NIST (National Institute of Standards and Technology) and applied to known vulnerabilities.
+
+https://insights.sei.cmu.edu/sei_blog/2018/12/threat-modeling-12-available-methods.html
+
+
