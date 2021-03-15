@@ -1,0 +1,126 @@
+Top 10 Threat Modeling Tools in 2020
+Cairis. ...
+IriusRisk. ...
+Kenna. ...
+Microsoft Threat Modeling Tool. ...
+OWASP Threat Dragon. ...
+SDElements by Security Compass. ...
+SecuriCAD by Foreseeti. ...
+Threagile.
+
+1. Cairis
+==============
+Cairis is an open-source threat modeling tool released in 2012. It is one of the most comprehensive open-source tools available.
+Platform: Cairns is a web-based tool.
+Core features: Once the necessary system information is imported, the tool pretty much takes over. It lets you create attacker personas. Personas are details of potential attackers — their goals, their resources, and possible path of attack. It offers 12 different views of your system —for example, it offers one view from a risk perspective while another from the architectural perspective. Cairis APIs make it easy to integrate with existing workflows. It spots attack patterns and lets you rationalize each mitigation tactic using a Data Flow Diagram.
+Unique features: You can define ‘environments’ or contexts that each asset operates in. This can be physical, social, or temporal. For example, certain plant operations that might take longer in the day.
+Usability: All current Cairis users report good usability. While there are reports of system information input being time-consuming, the rest of the software is considered easy flowing. 
+Customer support: Cairis has very detailed documentation online, along with various demos and video tutorials.
+Pricing model: Cairis is open-source, so there is no applicable pricing model.
+Editorial comments: Organizations that can potentially gain the most from Cairis are those with existing security skills and are looking into open source options.
+
+2. IriusRisk
+=============
+Founded in 2015, IriusRisk has both a community edition and a standard edition. 
+Platform: IriusRisk is a web-based tool.
+Core features: IriusRisk is diagram-centric, which makes system information input much easier. This information, along with questionnaire-based data collection about each asset, is used to generate a threat list with mitigation suggestions. It has a rules engine and integration with issue trackers, such as JIRA and CI/CD tools like Azure DevOps. This allows the security team, developers, and DevSecOps to work independently. It also has a robust reporting system. 
+Unique features: Draw.io is embedded into the IriusRisk tool, transferring its intuitive diagraming capabilities into this system. 
+Usability: Current users report that this tool is easy to use with a clear separation of controls and views.
+Customer support: Support is made available through email and a ticketing system. Tickets can be tracked and are usually solved between 24-48 hours. 
+Pricing model: IriusRisk offers license based subscriptions. It also has a community edition that can be used for free.
+Editorial comments: If you are an organization with not much security skill and have good capital invested in threat modeling, IriusRisk may be the tool for you. Alternatively, the community edition can be used as a basic threat modeling tool that lets you —
+Create a threat model
+Access rules engine
+Lists countermeasures
+Export the threat model 
+IriusRisk is also a good choice for those looking to upgrade from Microsoft Threat modeling Tool (MTMT) since you can directly import an MTMT model into IriusRisk.
+
+3. Kenna.VM 
+==============
+Kenna.VM is a Kenna Security offering that reports an application’s risk posture with empirical metrics.
+Platform: Kenna.VM is a cloud-based platform.
+Core features: Kenna.VM takes in enterprise and asset data as input and processes them using real-time threat intelligence. Using their unique set of metrics, asset-business criticality, the CVSS score of vulnerability, and machine learning, Kenna.VM offers a risk score for the entire system, as well as individual components. Any change in even a single component’s vulnerability reflects on the entire system’s status. It also offers actionable countermeasures, integration with ticketing tools, and reporting.
+Unique features: Kenna.VM has a unique algorithm to calculate risk metrics of vulnerabilities.
+Usability: Data integration is reported to be cumbersome, which Kenna.VM makes up for with full security skill and understandable reports.
+Customer support: A support team is available Monday through Friday by phone or email. Premium 24×7 support can be purchased. The basic documentation is reported to be unclear to non-security professionals.
+Pricing model: Kenna.VM is subscription-based, with costs calculated based on the number of assets.
+Editorial comments: Kenna is best for organizations that have just started scaling up their application. Kenna also works for teams with no prior security skills because of its superior threat intelligence framework.
+
+4. Microsoft Threat Modeling Tool
+=================================
+Microsoft Threat Modeling Tool is one of the oldest and most tested threat modeling tools in the market. It is an open-source tool that follows the Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege (STRIDE) methodology. 
+Platform: MTMT is a desktop-based tool that runs on Windows OS.
+Core features: Microsoft Threat modeling tool allows you to create a threat model based on Data Flow Diagrams (DFDs) you can create within the app. It focuses on Azure and Windows services. You can create a threat list and look at mitigation tactics associated with each threat. You can also generate reports of the models and export them.
+Unique features: It is the most mature tool in the lot. This means that it has comprehensive documentation and tutorials available.
+Usability: If your business is looking to gain a basic idea of threat modeling or is doing research on it, MTMT might be the way to go. The DFD creation is not very advanced with respect to available components. The mitigation information is also not intuitively displayed.
+Customer support: Documentation and help forums are widely available, making this tool perfect for research purposes.
+Pricing model: The Microsoft Threat Modeling Tool is open source, so there is no pricing involved.
+Editorial comments: MTMT is good for an organization looking to create and understand its first threat model for a basic application. Keep in mind that it is a Windows-based application. 
+
+5. OWASP Threat Dragon
+==========================
+The OWASP Threat Dragon is an open-source beast that was released in 2016. It is very similar to MTTM, with less focus on Microsoft-centered services.
+Platform: Threat Dragon is a web-based tool, though the older versions are desktop-based.
+Core features: Threat Dragon lets you create flow diagrams. These are fed into the rules engine, which creates the potential threat list. It has a comprehensive reporting engine. Threats can be added at the component level. Threat Dragon also offers mitigation suggestions.
+Unique features: The main advantage of the OWASP Threat Dragon is its powerful rule engine.
+Usability: Threat Dragon users report an average user experience, the usability rating bogged down by the lack of a separate threat dashboard. Besides this feature omission, the platform is a great option.
+Customer support: OWASP Threat Dragon has comprehensive documentation available, along with a good user base for peer-level troubleshooting.
+Pricing model: OWASP Threat Dragon is open-source, so it comes at zero cost to the company.
+Editorial comments: Threat Dragon is best for organizations looking for the first threat modeling experience with existing security skills. Threat dragon has no infrastructure constraints, which makes it superior to Microsoft’s open-source offering.
+
+6. SDElements by Security Compass
+================================
+SDElements is an award-winning threat modeling solution that has been in the market since 2011. It offers a smooth translation of policy into procedure. 
+Platform: SDElements is a web-based tool.
+Core features: SDElements collects system information using friendly surveys, classifies them based on vulnerabilities, and allows for validation using integrated test cases. Robust reporting makes the system audit-ready and easy to monitor. 
+Unique features: The USP of SDElements is its abundant integration with a variety of testing tools. It boasts of being the world’s first Business Development Automation (BDA) platform — meaning that the tool assists with the threat modeling process before, during, and after development.
+Usability: Users report a significant learning curve associated with set up and integration into existing systems. Once this hurdle is crossed, however, they report smooth sailing.
+Customer support: SDElements offers security experts to help with configuration and implementation to nudge along the above-mentioned learning curve. 
+Pricing model: SDElements follows a usage-based price modeling based on the number of applications used. There are three versions one can pick from — Express, Professional, and Enterprise.
+Editorial comments: SDElements by Security Compass is great for enterprises looking for scalable, automated solutions. 
+
+7. SecuriCAD by Foreseeti
+===========================
+SecuriCAD is a threat modeling tool that creates attack simulations based on app architecture. It has three editions — Community, Professional, and Enterprise 
+Platform: SecuriCAD is one of the few desktop-based offerings. The Enterprise edition, however, can be deployed on-premise or in the cloud.
+Core features: SecuriCAD is a fully-automated tool that allows you to create application models and creates repeatable attack simulations for each asset. It also offers reports of the most likely attack paths, vulnerabilities, suggested countermeasures, and risk exposure based on the current architecture. It also has a critical attack path visualization that shows where security controls can be implemented to break the path.
+Unique features: SecuriCAD offers attack simulations. For example, SecuriCAD can calculate the probable time that a skilled attacker persona would take to exploit a vulnerability in your system and say something like — With 10 days of effort, there is a 4% chance of this particular attack. This lends more weight to the threat ranking process.
+Usability: SecuriCAD boasts of an easy flowing and user-intuitive interface.
+Customer support: The Community edition of SecuriCAD has an online learning platform. For the Enterprise edition, Foreseeti offers support, training, and consultancy services.
+Pricing model: Pricing is based on edition, model size, and the number of simulations. It starts from £990. The Community edition is free.
+Editorial comments: SecuriCAD by Foreseeti is the ideal TM tool for organizations with moderately complex IT infrastructure. Current customers include financial institutions, airports, and defense forces.
+
+8. Threagile
+================
+The newest of all the tools, Threagile, is an open-sourced, code-based threat modeling tool kit. 
+Platform: Threagile is an Integrated Developer Environment or IDE-based tool, which focuses on integrating threat modeling at the application coding level.
+Core features: Threagile’s aim is to ‘Threat-Model-As-Code’. It is an agile-based, developer-friendly tool that works right from the application codebase. Input is in the form of YAML files — everything from infrastructure to risk rules. The generated model can be downloaded as a detailed Data Flow Diagram. Reports are generated in PDF, Excel, and JSON formats — JSON being particularly useful for DevSecOps. The model is maintained and regenerated within the codebase.
+Unique features: It is the most comprehensive code-driven threat methodology tool.
+Usability: Threagile is completely YAML-based, which most IDEs support. This means manipulating the threat model is easy.
+Customer support: Threagile offers online documentation and has a growing community of users.
+Pricing model: This tool is open-sourced, so there is no pricing involved.
+Editorial comments: Threagile is best for start-ups with small code-savvy teams and in-house security experts. It also works well with agile environments.
+
+9. ThreatModeler
+==================
+ThreatModeler is a heavyweight in this landscape, offering security and automation throughout the enterprise’s development life cycle. It has three editions — Community, Appsec, and Cloud.
+Platform: ThreatModeler is a web-based platform.
+Core features: ThreatModeler runs using the Visual Agile Simple Threat or VAST threat modeling methodology. It offers an intelligent threat engine, a report engine, template builder, threat model versioning, and built-in workflow approval. It is integrated with Visio, Lucid Charts, and Draw.io for diagramming. It also has native integrations with JIRA and Jenkins. ThreatModeler also offers API access.
+Unique features: ThreatModeler is the first commercially available and automated threat modeling tool. The VAST methodology offers a holistic view of the attack surface.
+Usability: Clearly separated processes with colorful, easy to navigate dashboards makes this tool very easy to navigate through, according to users.
+Customer support: ThreatModeler offers premium support options for enterprises, as well as a dedicated customer team. 
+Pricing model: This tool is based on annual subscription-based licenses, with no limit on the number of users.
+Editorial comments: A bit on the pricier side, ThreatModeler can be used by enterprises with complex systems. They do not need prior security experience since ThreatModeler offers exclusive support. The community edition is very bare-bones, ideally for someone playing with the idea of threat modeling and looking to learn more at a research level.
+
+10. Tutamantic
+=================
+Tutamantic aims to create a living threat model that changes with design.
+Platform: Tutamantic is a SaaS product.
+Core features: Tutamantic aims to present a clean experience to its threat modeling users, with diagrams created in diagrams.net, Visio, and Lucidcharts. Tutamantic uses common taxonomies like STRIDE, CWE, and CAPEC. Tutamantic offers a variety of reports for different stakeholders. Besides reports, raw data is also provided as consumable JSON and CSV reports. This enables users to play around with metadata.
+Unique features: This tool uses Rapid Threat Model Prototyping, which is achieved with a consistent framework, repeatable process, and measurable data.
+Usability: Tutamantic is live in MVP status.
+Customer support: A continuous feedback loop with Tutamantic Team is possible.
+Pricing model: Tutamantic is free for all in Beta.
+Editorial comments: Tutamantic is best for start-ups looking to play around and gain knowledge of the threat modeling process before moving on to a more complex tool.
+
+Reference: https://www.toolbox.com/security/vulnerability-management/articles/top-10-threat-modeling-tools-2020/
