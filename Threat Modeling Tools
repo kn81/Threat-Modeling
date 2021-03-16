@@ -57,6 +57,10 @@ Customer support: Documentation and help forums are widely available, making thi
 Pricing model: The Microsoft Threat Modeling Tool is open source, so there is no pricing involved.
 Editorial comments: MTMT is good for an organization looking to create and understand its first threat model for a basic application. Keep in mind that it is a Windows-based application. 
 
+DOWNLOAD LOCATION     https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling
+VIDEOS LOCATION       https://www.youtube.com/channel/UC8K6VqlzsKncZtZf0_n71oQ
+------------------------
+
 5. OWASP Threat Dragon
 ==========================
 The OWASP Threat Dragon is an open-source beast that was released in 2016. It is very similar to MTTM, with less focus on Microsoft-centered services.
